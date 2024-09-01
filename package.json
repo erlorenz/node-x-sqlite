@@ -1,0 +1,31 @@
+{
+  "name": "node-x-sqlite",
+  "version": "0.1.0",
+  "description": "A basic wrapper around the experimental node sqlite to add functionality.",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "types": "./dist/index.d.mts"
+  },
+  "scripts": {
+    "test": "tsx --test --experimental-sqlite --no-warnings **/*.test.ts",
+    "type-check": "tsc --noEmit",
+    "build": "npx pkgroll"
+  },
+  "author": "Erik Lorenz",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/erlorenz/x-sqlite-node"
+  },
+  "keywords": [
+    "sqlite",
+    "node",
+    "experimental"
+  ]
+}
