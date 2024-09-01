@@ -92,7 +92,7 @@ export class Database {
     }
   }
 
-  /** Sets the journal mode or returns it if no argument is passed. */
+  /** Gets the journal mode. */
   get journalMode() {
     const { journal_mode } = this.conn.prepare("PRAGMA journal_mode").get() as {
       journal_mode: string;
